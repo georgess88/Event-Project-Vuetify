@@ -3,6 +3,7 @@ to run the project make sure you installed Python and nodejs
 client:
 click on "run client dev mode.bat" to run client side
 make sure that vuetify is added and that axios installed
+
 npm install Axios
 
 in case the dev mode didn't work this is beacuse you need to install vue cli and import axios and vuetify.
