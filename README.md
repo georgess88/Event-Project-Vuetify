@@ -17,3 +17,6 @@ make sure that django rest framework and cors are installed
 pip install djangorestframework
 
 pip install django-cors-headers
+
+please note that client side code is in "vuetify" folder
+and the server side code is in "eventproject" directory
