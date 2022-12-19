@@ -13,5 +13,7 @@ open "vuetify build mode" directory and click on "run client build mode.bat"
 server:
 click on "run server.bat" to run server side
 make sure that django rest framework and cors are installed
+
 pip install djangorestframework
+
 pip install django-cors-headers
