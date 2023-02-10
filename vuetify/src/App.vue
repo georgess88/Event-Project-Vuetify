@@ -7,7 +7,7 @@
             Events Project
           </v-list-item-title>
           <v-list-item-subtitle>
-            for Opportunity Network
+            for My Network
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
