@@ -53,15 +53,6 @@ export default {
     loadApp() {
       console.log("called")
       if (sessionStorage.getItem('username')) {
-        if (sessionStorage.getItem('username') == "Mr.Rory" || sessionStorage.getItem('username') == "Mr.Jose")
-          this.items = [
-            { title: 'My Events', icon: 'mdi-account', to: '/myevents' },
-            { title: 'Events', icon: 'mdi-alpha-e-box', to: '/events' },
-            { title: 'Create Event', icon: 'mdi-calendar-plus', to: '/home' },
-            { title: 'Logout', icon: 'mdi-logout', to: '/logout' },
-            { title: 'Super User Control', icon: 'mdi-account-convert', to: '/superuser' },
-          ]
-        else
           this.items = [
             { title: 'My Events', icon: 'mdi-account', to: '/myevents' },
             { title: 'Events', icon: 'mdi-alpha-e-box', to: '/events' },
