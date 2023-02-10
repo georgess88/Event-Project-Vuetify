@@ -8,6 +8,8 @@ this project includes the following tasks:
 
 4-Permission public, private and draft
 
-5-superusers
+5-Search by any attribute for events
+
+6-SU who can edit delete any post
 
 Language used: VueJs, Python, Django, JavaScript, SQL
