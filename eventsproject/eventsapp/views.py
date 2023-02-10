@@ -218,33 +218,3 @@ def getSubscribers(request):
         return JsonResponse(s,safe=False)
 
 
-@csrf_exempt
-def getUsersSU(request):
-    if request.method == 'POST':
-        if request.POST.get('username')=='Mr.Rory' or request.POST.get('username')=='Mr.Jose':
-            users = User.objects.all().exclude(username__in=["Mr.Rory","Mr.Jose"])
-            SUsers = SuperUsers.objects.all()
-            s=[UserSerializer(users, many=True).data,SuperUsersSerialize(SUsers, many=True).data]
-            return JsonResponse(s,safe=False)
-
-
-@csrf_exempt
-def makeUsersSU(request):
-    if request.method == 'POST':
-        if request.POST.get('username')=='Mr.Rory' or request.POST.get('username')=='Mr.Jose':
-            try:
-                d = SuperUsers(username_id=request.POST.get('user'))
-                d.save()
-                return HttpResponse("Success")
-            except:
-                return HttpResponse("Error inserting event")
-
-@csrf_exempt
-def clearUsersSU(request):
-    if request.method == 'POST':
-        if request.POST.get('username')=='Mr.Rory' or request.POST.get('username')=='Mr.Jose':
-            try:
-                SuperUsers.objects.filter(username=request.POST.get('user')).delete()
-                return HttpResponse("Success")
-            except:
-                return HttpResponse("Error")
