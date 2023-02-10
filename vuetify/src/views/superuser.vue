@@ -106,10 +106,6 @@ export default {
       this.$router.push({ path: '/login' })
     }
 
-    else if (sessionStorage.getItem('username')) {
-      if (sessionStorage.getItem('username') != "Mr.Rory" && sessionStorage.getItem('username') != "Mr.Jose")
-        this.$router.push({ path: '/login' })
-    }
 
   }
 }
